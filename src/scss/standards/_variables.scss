@@ -1,0 +1,72 @@
+/* Colors and Fonts START*/
+$white: #ffffff;
+$black: #000000;
+$red: red;
+$primary: #F27405;
+$secondary: #F2F2F2;
+
+@mixin transition {
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+@mixin button{
+    width: 208px;
+    height: 44px;
+    border: 1px solid;
+    border-color: $primary;
+    background: $primary;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17.524px;
+    @include transition;
+    &:hover{
+        @include transition;
+        border-color: $primary;
+        background: transparent;
+        color: $primary;
+
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        }
+}
+@mixin button-secondary{
+    width: 208px;
+    height: 44px;
+    border: 1px solid;
+    border-color: $secondary;
+    background: $secondary;
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17.524px;
+    @include transition;
+    &:hover{
+        @include transition;
+        border-color: $secondary;
+        background: $primary;
+        color: $secondary;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        }
+}
+/* Colors and Fonts END*/

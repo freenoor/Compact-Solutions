@@ -1,0 +1,89 @@
+/* CF 1 START*/
+.contact-form-1{
+    background: $white;
+    border-radius: 15px;
+    margin: 12px 0;
+    @media(max-width: 991.98px) {
+        margin: 24px 0;
+    }
+    .widgettitle{
+        padding: 32px 32px 0px 32px;
+        @media(max-width: 991.98px) {
+            padding: 24px 24px 0px 24px;
+        }
+    }
+    form{
+        padding: 32px;
+        @media(max-width: 991.98px) {
+            padding: 17px;
+        }
+        .wpcf7-response-output{
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 10px;
+            color: white;
+            border-width: 0px;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        p{
+            margin-bottom: 16px;
+            &:nth-last-child(-n+3){
+                margin-bottom: 0;
+            }
+        }
+        label{
+            width: 100%;
+            font-size: 15px;
+            color: $white;
+            font-family: Inter;
+            font-style: normal;
+            line-height: normal;
+            gap: 8px;
+            display: flex;
+            flex-direction: column;
+            @media(max-width: 991.98px) {
+                font-size: 14px;
+            }
+            input, textarea, select{
+                width: 100%;
+                border-radius: 5px;
+                border: 0;
+                font-size: 16px;
+                height: 46px;
+                padding-left: 6px;
+                font-family: Inter;
+                @media(max-width: 991.98px) {
+                    height: 42px;
+                }
+            }
+            textarea{
+                min-height: 133px;
+                padding-top: 5px;
+                @media(max-width: 991.98px) {
+                    min-height: 121px;
+                }
+            }
+            .wpcf7-not-valid-tip, .wpcf7-response-output{
+                display: none;
+            }
+            .wpcf7-not-valid{
+                border-bottom: 5px solid $red;
+            }
+        }
+        .wpcf7-submit{
+           @include button-secondary;
+            margin-top: 12px;
+            &:hover{
+                color: $secondary;
+                border: 1px solid!important;
+                border-left: 0!important;
+                border-right: 0!important;
+            }
+        }
+        .wpcf7-spinner{
+            display: none;
+        }
+    }
+}
+/* CF 1 END*/
